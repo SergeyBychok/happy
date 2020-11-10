@@ -1,4 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
+import Font from '@assets/fonts/poppins-v15-latin-regular.woff2'
+import FontWoff from '@assets/fonts/poppins-v15-latin-regular.woff'
+import FontTtf from '@assets/fonts/poppins-v15-latin-regular.ttf'
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -6,9 +9,9 @@ const GlobalStyle = createGlobalStyle`
         font-style: normal;
         font-weight: 500;
         font-display: swap;
-        src:url(${'@assets/fonts/poppins-v15-latin-regular.woff2'}) format('woff2');
-        src:url(${'@assets/fonts/poppins-v15-latin-regular.woff'}) format('woff');
-        src: url(${'@assets/fonts/poppins-v15-latin-regular.ttf'});
+        src:url(${Font}) format('woff2');
+        src:url(${FontWoff}) format('woff');
+        src: url(${FontTtf});
 }
 html,
 body,
@@ -106,6 +109,8 @@ body {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 article,
 aside,

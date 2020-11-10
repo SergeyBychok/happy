@@ -22,3 +22,7 @@ declare module '*.svg' {
 declare interface GlobalFetch {
   fetch(input: RequestInfo, init?: RequestInit): Promise<Response>
 }
+
+declare module '*.woff'
+declare module '*.woff2'
+declare module '*.ttf'
